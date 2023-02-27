@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   src: url('../assets/fonts/Raleway/static/Raleway-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway-Bold';
+  font-family: 'Raleway-Bold', sans-serif;
   src: url('../assets/fonts/Raleway/static/Raleway-Bold.ttf');
   font-weight: 700;
   font-style: bold;
@@ -14,21 +14,27 @@
 
 
 @font-face {
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans-Bold', sans-serif;
   src: url('../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
   font-weight: 700;
   font-style: bold;
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold';
+  font-family: 'Raleway-Medium', sans-serif;
+  src: url('../assets/fonts/Raleway/static/Raleway-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold', sans-serif;
   src: url('../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans-SemiBold';
+  font-family: 'OpenSans-SemiBold', sans-seri;
   src: url('../assets/fonts/Open_Sans/static/OpenSans/OpenSans-SemiBold.ttf');
   font-weight: 600;
 }
@@ -36,14 +42,75 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
-body {
-  width: 1510px;
+/*.header-container {
+  max-width: 1510px;
   margin: 0 auto;
 }
+
+.wrapper-header {
+  margin: 0 auto;
+  padding: 20px 15px;
+  background-color: red;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo img {
+  padding-left: 100px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 170px;
+
+}
+
+.nav-list-item {
+  padding-left: 68px;
+  padding-top: 7px;
+  list-style-type: none;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  font-family: 'OpenSans-SemiBold';
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.header-section {
+  height: 951px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 231px;
+  background-image: url(../assets/images/city-header.png);
+  filter: brightness(.5)
+}
+
+.header-section-one .header-logo img {
+  padding-left: 20px;
+}
+
+.header-section-one h1 {
+  width: 670px;
+  margin-top: 70px;
+  margin-left: 20px;
+  font-family: 'Raleway-Medium';
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+}/*
 
 /*Секция tabs*/
 
@@ -233,13 +300,16 @@ body {
 /* Секция pricing*/
 
 .section-pricing {
-  max-width: 1508px;
-  margin-top: 58px;
+  /*max-width: 1508px;*/
+  margin: 58px auto 0 auto;
   background-color: #F5F5F5;
 }
 
 .wrapper-pricing {
-  margin-left: -30px;
+ /* margin-left: -30px;*/
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .wrapper-pricing h2 {
@@ -252,14 +322,16 @@ body {
 }
 
 .pricing-content {
-  margin: 79px 182px 50px 184px;
+  /*margin: 79px 182px 50px 184px;*/
   display: flex;
   justify-content: space-between;
+  margin-top: 80px;
+  padding-bottom: 50px;
 }
 
 .pricing-list li {
   width: 370px;
-  padding: 12px 0;
+  padding: 14px 0;
   /*margin-right: 30px;*/
   list-style-type: none;
   font-family: 'Raleway';
@@ -268,7 +340,7 @@ body {
   text-align: center;
   color: #86878B;
   background-color: #FFFFFF;
-  border: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
 }
 
 .two-col {

@@ -1,40 +1,36 @@
 @font-face {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway';
   src: url('../assets/fonts/Raleway/static/Raleway-Regular.ttf');
-  font-weight: 400;
-  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Raleway-Bold', sans-serif;
+  font-family: 'Raleway-Bold';
   src: url('../assets/fonts/Raleway/static/Raleway-Bold.ttf');
-  font-weight: 700;
-  font-style: bold;
+  font-weight: bold;
 }
 
 
 @font-face {
-  font-family: 'OpenSans-Bold', sans-serif;
+  font-family: 'OpenSans-Bold';
   src: url('../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
-  font-weight: 700;
-  font-style: bold;
+  font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Raleway-Medium', sans-serif;
+  font-family: 'Raleway-Medium';
   src: url('../assets/fonts/Raleway/static/Raleway-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold', sans-serif;
+  font-family: 'OpenSans-Bold';
   src: url('../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
-  font-weight: 400;
-  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans-SemiBold', sans-seri;
+  font-family: 'OpenSans-SemiBold';
   src: url('../assets/fonts/Open_Sans/static/OpenSans/OpenSans-SemiBold.ttf');
   font-weight: 600;
 }
@@ -133,7 +129,7 @@
   margin: 0 -14px -2px 0;
   padding: 10px 0 0 0;
   display: inline-block;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans-Bold', sans-serif;
   font-size: 14px;
   line-height: 19px;
   text-align: center;
@@ -156,7 +152,6 @@
 
 .tabs-two {
   display: inline-block;
-  /*padding-top: 50px;*/
 }
 
 .tabs-two img {
@@ -167,8 +162,7 @@
 
 .tabs-one h2 {
   padding-right: 53px;
- /* margin: 22px 0 27px -27px;*/
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans-Bold', sans-serif;
   font-size: 30px;
   line-height: 41px;
   text-align: center;
@@ -176,7 +170,7 @@
 }
 
 .tabs-one p {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-align: left;
@@ -207,7 +201,7 @@
   display: inline-block;
   text-decoration: none;
   margin-top: 17px;
-  font-family: 'OpenSans-SemiBold';
+  font-family: 'OpenSans-SemiBold', sans-serif;
   font-size: 18px;
   line-height: 100%;
   color: #FFFFFF;
@@ -225,8 +219,8 @@
 }
 
 .section-title {
-  margin: 50px 20px 50px 20px;
-  font-family: 'Raleway';
+  margin: 50px 20px;
+  font-family: 'Raleway', sans-serif;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
@@ -242,7 +236,7 @@
 
 .section-discription {
   margin-top: 40px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -257,7 +251,6 @@
 }
 
 .section-about-elem-text {
- /* display: inline-block;*/
   margin-top: 75px;
 }
 
@@ -280,7 +273,7 @@
 
 .section-about-elem-text h3 {
   margin: 0 auto;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans-Bold', sans-serif;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
@@ -289,7 +282,7 @@
 
 .section-about-elem-text p {
   margin-top: 42px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -300,13 +293,11 @@
 /* Секция pricing*/
 
 .section-pricing {
-  /*max-width: 1508px;*/
   margin: 58px auto 0 auto;
   background-color: #F5F5F5;
 }
 
 .wrapper-pricing {
- /* margin-left: -30px;*/
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -322,7 +313,6 @@
 }
 
 .pricing-content {
-  /*margin: 79px 182px 50px 184px;*/
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
@@ -332,9 +322,8 @@
 .pricing-list li {
   width: 370px;
   padding: 14px 0;
-  /*margin-right: 30px;*/
   list-style-type: none;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -350,7 +339,7 @@
 .pricing-list li:first-child {
   padding: 12px 0;
   background-color: #333333;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans-Bold', sans-serif;
   font-size: 24px;
   line-height: 33px;
   color: #FFFFFF;
@@ -359,7 +348,7 @@
 .pricing-list li:nth-child(2) {
   padding: 28px 0;
   background-color: #333333;
-  font-family: 'Raleway-Bold';
+  font-family: 'Raleway-Bold', sans-serif;
   font-size: 36px;
   line-height: 42px;
   color: #FFFFFF;
@@ -371,4 +360,73 @@
 
 .pricing-content-optima {
   margin-top: -20px;
+}
+
+.section-review {
+  margin: 100px auto 0 auto;
+}
+
+.wrapper-review {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.review-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  margin-top: 83px;
+}
+
+.review-col {
+  width: 33.3%;
+  padding: 15px;
+}
+
+.review-col-text {
+  text-align: center;
+  padding: 38px 18px;
+  border-radius: 10px;
+  background-color: #E2E2E2;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #86878B;
+}
+
+.review-col-triangle {
+  width: 0;
+  height: 0;
+  margin-left: 65px;
+  border-top: 20px solid #E2E2E2;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+}
+
+.review-info {
+  display: flex;
+  margin-top: 66px;
+}
+
+.review-info img {
+  width: 70px;
+  height: 70px;
+}
+
+.review-info-name {
+  margin-left: 30px;
+}
+
+.review-info-name p:first-child {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: bold;
+}
+
+.review-info-name p:last-child {
+  margin-top: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
 }

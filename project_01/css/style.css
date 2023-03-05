@@ -43,7 +43,9 @@
   box-sizing: border-box;
 }
 
-/*.header-container {
+/* Header*/
+
+.header-container {
   max-width: 1510px;
   margin: 0 auto;
 }
@@ -51,7 +53,9 @@
 .wrapper-header {
   margin: 0 auto;
   padding: 20px 15px;
-  background-color: red;
+  position: relative;
+  z-index: 2;
+  background-color: #000000;
 }
 
 .header-content {
@@ -59,54 +63,213 @@
   justify-content: space-between;
 }
 
-.header-logo img {
+.header-logo {
   padding-left: 100px;
+}
+
+.nav-menu {
+  padding-right: 170px;
 }
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 170px;
-
-}
-
-.nav-list-item {
-  padding-left: 68px;
-  padding-top: 7px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   list-style-type: none;
 }
 
 .nav-list-item a {
+  display: block;
+  padding: 7px 30px;
+  /*padding-left: 68px;
+  padding-top: 7px;*/
+  text-align: center;
   text-decoration: none;
-  font-family: 'OpenSans-SemiBold';
+}
+
+.nav-list-item a:hover {
+  background-color: #EC7979;
+  text-align: center;
+}
+
+.nav-list-item a:active {
+   background-color: #AB4949;
+  text-align: center;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  font-family: 'OpenSans-SemiBold', sans-serif;
   font-size: 14px;
   color: #FFFFFF;
 }
 
-.header-section {
-  height: 951px;
-  display: flex;
-  justify-content: space-around;
+/* Секция banner*/
+
+.section-banner {
+  width: 1510px;
   margin: 0 auto;
-  padding-top: 231px;
+  padding: 0;
+}
+
+.wrapper-section-banner {
+  height: 1026px;
+  margin-top: -75px;
+  padding-top: 300px;
+  padding-left: 170px;
+  position: relative;
+  z-index: 1;
   background-image: url(../assets/images/city-header.png);
-  filter: brightness(.5)
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.header-section-one .header-logo img {
-  padding-left: 20px;
+.wrapper-section-banner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 2;
 }
 
-.header-section-one h1 {
+.banner-filter {
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+
+.banner-section-title {
   width: 670px;
-  margin-top: 70px;
-  margin-left: 20px;
+  position: relative;
+  margin-top: 72px;
   font-family: 'Raleway-Medium';
   font-size: 48px;
+  font-weight: 500;
   line-height: 56px;
   color: #FFFFFF;
-}/*
+}
+
+.banner-section-title::after {
+  position: absolute;
+  content: '';
+  width: 170px;
+  height: 1px;
+  background-color:  #FFFFFF;
+  bottom: -55px;
+  left: 0;
+}
+
+.banner-logo p {
+  width: 270px;
+  padding-top: 100px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.banner-button {
+  width: 270px;
+  height: 58px;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  margin-top: 42px;
+  text-align: center;
+  font-family: 'OpenSans-SemiBold', sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.banner-button:hover {
+  border: 2px solid #EC7979;
+  color: #EC7979;
+}
+
+.banner-button:active {
+  border: 2px solid #AB4949;
+  background-color: #AB4949;
+  color: #FFFFFF;
+}
+
+.banner-form {
+  width: 470px;
+  height: 450px;
+  margin-left: 30px;
+  margin-top: -18px;
+  border-radius:10px;
+  background-color: #FFFFFF;
+}
+
+.title-form {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.banner-form .title-form p {
+  padding: 0 3px;
+  color: #333333;
+  text-transform: uppercase;
+  font-family: 'OpenSans-Bold';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.banner-form .title-form p:nth-child(2) {
+  color: #EC7979;
+}
+
+.contact-form {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+}
+
+.contact-form input {
+  margin-top: 35px;
+  border: 0;
+  border-bottom: 1px solid #BDBDBD;
+  font-family: 'OpenSans-Bold';
+  font-size: 14px;
+  line-height: 19px;
+  color: #BDBDBD;
+}
+
+.contact-name, .contact-email, .contact-password {
+  padding: 10px 0;
+}
+
+.contact-form .contact-submit {
+  width: 470px;
+  height: 60px;
+  margin: 72px 0 0 -50px;
+  padding: 0;
+  border: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #EC7979;
+  font-family: 'OpenSans-SemiBold';
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.contact-form .contact-submit:hover {
+  background-color: #AB4949;
+}
+
+
 
 /*Секция tabs*/
 
@@ -157,7 +320,8 @@
 .tabs-two img {
   width: 470px;
   height: 500px;
-  margin-left: 29px;
+  display: block;
+  margin-left: 30px;
 }
 
 .tabs-one h2 {
@@ -207,6 +371,15 @@
   color: #FFFFFF;
 }
 
+
+.tabs-one-button:hover {
+  background-color: #AB4949;
+}
+
+.tabs-one-button:active {
+  background-color: #EC7979;
+}
+
 /*Секция аbout*/
 
 .section-about {
@@ -219,6 +392,7 @@
 }
 
 .section-title {
+  position: relative;
   margin: 50px 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 36px;
@@ -228,14 +402,46 @@
   text-align: center;
 }
 
-.section-line {
+.section-title::after {
+  position: absolute;
+  content: '';
+  width: 170px;
+  height: 1px;
+  background-color:  #EC7979;
+  bottom: -55px;
+  left: calc(50% - 85px);
+}
+
+/*.section-line {
   width: 170px;
   margin: 0 auto;
   border-bottom: 1px solid #EC7979;
+}/*
+
+/*.banner-section-title {
+  width: 670px;
+  position: relative;
+  margin-top: 72px;
+  font-family: 'Raleway-Medium';
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #FFFFFF;
 }
 
+.banner-section-title::after {
+  position: absolute;
+  content: '';
+  width: 170px;
+  height: 1px;
+  background-color:  #FFFFFF;
+  bottom: -55px;
+  left: 0;
+}*/
+
+
 .section-discription {
-  margin-top: 40px;
+  margin-top: 100px;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -385,23 +591,34 @@
 }
 
 .review-col-text {
-  text-align: center;
+  position: relative;
   padding: 38px 18px;
   border-radius: 10px;
   background-color: #E2E2E2;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+  text-align: center;
   color: #86878B;
 }
 
-.review-col-triangle {
-  width: 0;
-  height: 0;
-  margin-left: 65px;
+.review-col-text::before, .review-col-text::after {
+  position: absolute;
+  content: '';
+  margin: 38px -125px;
   border-top: 20px solid #E2E2E2;
   border-right: 20px solid transparent;
   border-left: 20px solid transparent;
 }
+
+
+/*
+.review-col-triangle {
+  width: 0;
+  height: 0;
+  border-top: 20px solid #E2E2E2;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+}*/
 
 .review-info {
   display: flex;
@@ -411,6 +628,7 @@
 .review-info img {
   width: 70px;
   height: 70px;
+  border-radius: 50%;
 }
 
 .review-info-name {
@@ -429,4 +647,100 @@
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 21px;
+}
+
+/* Секция design*/
+
+.section-design {
+  width: 1510px;
+  margin: 64px auto 0 auto;
+  padding: 0;
+}
+
+.wrapper-design {
+  height: 442px;
+  text-align: center;
+  /*margin-top: -75px;
+  padding-top: 300px;
+  padding-left: 170px;*/
+  position: relative;
+  z-index: 1;
+  background-image: url(../assets/images/city-design.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper-design:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 2;
+}
+
+.wrapper-design .banner-filter {
+  flex-direction: column;
+  padding-top: 100px;
+
+}
+
+.design-title {
+  position: relative;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.design-title::after {
+  position: absolute;
+  content: '';
+  width: 170px;
+  height: 1px;
+  background-color:  #FFFFFF;
+  bottom: -55px;
+  left: 44%;
+}
+
+.banner-filter p {
+  padding-top: 100px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.design-button {
+  width: 370px;
+  height: 58px;
+  margin: 65px auto 0;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'OpenSans-SemiBold', sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.design-button:hover {
+  border: 2px solid #EC7979;
+  color: #EC7979;
+}
+
+.design-button:active {
+  border: 2px solid #AB4949;
+  background-color: #AB4949;
+  color: #FFFFFF;
+}
+
+.section-contact {
+  margin-top: 50px;
 }

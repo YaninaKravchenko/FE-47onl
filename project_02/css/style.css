@@ -1,0 +1,299 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../assets/fonts/Poppins/Poppins-Bold.ttf');
+  font-weight: bold;
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.testimonial {
+  height: 1300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  min-height:100%;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  background-image: url(../assets/images/image.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonial:after {
+  content: '';
+  position: absolute;
+  top: -135px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../assets/images/up.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 2;
+}
+
+.testimonial::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -85px;
+  background-image: url(../assets/images/down.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 2;
+}
+
+.content {
+  /*text-align: center;*/
+  color: #FFFFFF;
+}
+
+.mask-one {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  transform: translate(90%, 240%);
+
+}
+
+.mask-two {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  transform: translate(-70%, -230%);
+}
+
+.testimonial-info {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  top: 28%;
+  bottom: 0;
+}
+
+.testimonial-info h2 {
+  width: 327px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  font-family: 'Poppins-Bold';
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.testimonial-info h2::after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 7px;
+  background-color: #FD749B;
+  border-radius: 10px;
+  bottom: -30px;
+  left: calc(163px - 25px);
+}
+
+.testimonial-text {
+  width: 540px;
+  margin: 0 auto;
+  padding-top: 75px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.block-testimonial {
+  margin-top: 50px;
+}
+
+.block-circle {
+  position: absolute;
+  content: '';
+  z-index: 3;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  top: 50%;
+}
+.circle {
+  position: absolute;
+  content: '';
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  color: #D8D8D8;
+}
+
+.one .fa-solid,
+.seven .fa-solid,
+.eight .fa-solid,
+.nine .fa-solid,
+.ten .fa-solid,
+.eleven .fa-solid,
+.twelvy .fa-solid {
+  font-size: 84px;
+}
+
+.one {
+  transform: translate(-75%, 36%);
+}
+
+.seven {
+  transform: translate(-13%, 34%);
+}
+
+.eight {
+  transform: translate(12%, 23%);
+}
+
+.nine {
+  transform: translate(32%, 13%);
+}
+
+.ten {
+  transform: translate(34%, 47%);
+}
+
+.eleven {
+  transform: translate(48%, 29%);
+}
+
+.twelvy {
+  transform: translate(63%, 0%);
+}
+
+.two .fa-solid {
+  font-size: 137.87px;
+}
+
+.two {
+  transform: translate(-63%, 13%);
+}
+
+.three .fa-solid,
+.thirteen .fa-solid  {
+  font-size: 45.12px;
+}
+
+.three {
+  transform: translate(-41%, 38%);
+}
+
+.thirteen {
+  transform: translate(29%, 32%);
+}
+
+.four .fa-solid{
+  font-size: 68.52px;
+}
+
+.four {
+  transform: translate(-37%, 16%);
+}
+
+.five .fa-solid{
+  font-size: 58.49px;
+}
+
+.five {
+  transform: translate(-26%, 27%);
+}
+
+.six .fa-solid{
+  font-size: 65.17px;
+}
+
+.six {
+  transform: translate(-9%, 17%);
+}
+
+.block-testimonial {
+  display:none;
+  position: absolute;
+  content: '';
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.block-name {
+  width: 410px;
+  height: 117px;
+  margin: 0 auto;
+  background-color: #C4C4C4;
+  border-radius: 15px;
+  color: #333333;
+  padding-left: 26px;
+}
+
+
+.block-name::before {
+  position: absolute;
+  content: '';
+  margin: 35px -63px;
+  border: 20px solid transparent;
+  border-right: 20px solid  #C4C4C4;
+}
+
+
+
+.block-name h3 {
+  font-family: 'Poppins';
+  font-size: 14px;
+  line-height: 65px;
+}
+
+.block-name img {
+  width: 24px;
+  height: 24px;
+  content: "";
+  position: absolute;
+  margin-left: 330px;
+  margin-top: -50px;
+}
+
+.text-first {
+  font-family: 'Poppins-Bold';
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.text-second {
+  font-family: 'Poppins';
+  font-size: 12px;
+}
+
+.one:hover .block-testimonial {
+  display: block;
+}

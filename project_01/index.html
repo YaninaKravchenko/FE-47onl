@@ -25,6 +25,22 @@
                 </ul>
             </nav>
         </div>
+        <div class="container-menu-hamburger">
+            <input id="toggle" class="checkbox" type="checkbox" name="checkbox"  />
+            <label class="hamburger-bth" for="toggle">
+                <span class="line"></span>
+            </label>
+               <!-- <nav class="menu-hamburger">-->
+                    <ul class="nav-list-hamburger">
+                        <li class="nav-list-item"><a href="#features-menu">Features</a></li>
+                        <li class="nav-list-item"><a href="#about-menu">About</a></li>
+                        <li class="nav-list-item"><a href="#pricing-menu">Pricing</a></li>
+                        <li class="nav-list-item"><a href="#reviews-menu">Reviews</a></li>
+                        <li class="nav-list-item"><a href="#contact-menu">Contact</a></li>
+                    </ul>
+                <!--</nav>-->
+              </div>
+        </div>
     </header>
 <main class="main-container">
     <section class="section-banner">
@@ -64,13 +80,13 @@
                     Aenean euismod bibendum laoreet. </p>
             </div>
             <div class="section-social-icons">
-                <a href="https://www.facebook.com"><img src="assets/icons/social-faceb.svg" alt="facebook"></a>
-                <a href="https://twitter.com"><img src="assets/icons/social-twt.svg" alt="twitter"></a>
-                <a href="https://www.facebook.com"><img src="assets/icons/social-lin.svg" alt="in"></a>
-                <a href="https://www.pinterest.com"><img src="assets/icons/social-pint.svg" alt="pinterest"></a>
-                <a href="https://www.instagram.com"><img src="assets/icons/social-inst.svg" alt="instagram"></a>
-                <a href="https://github.com"><img src="assets/icons/social-gitt.svg" alt="github"></a>
-                <a href="https://www.pinterest.com"><img src="assets/icons/social-rsss.svg" alt="rss"></a>
+                <a href="https://www.facebook.com"><img class="facebook" src="assets/icons/social-faceb.svg" alt="facebook"></a>
+                <a href="https://twitter.com"><img class="twitter" src="assets/icons/social-twt.svg" alt="twitter"></a>
+                <a href="https://www.facebook.com"><img class="lin" src="assets/icons/social-lin.svg" alt="in"></a>
+                <a href="https://www.pinterest.com"><img class="pinterest" src="assets/icons/social-pint.svg" alt="pinterest"></a>
+                <a href="https://www.instagram.com"><img class="instagram" src="assets/icons/social-inst.svg" alt="instagram"></a>
+                <a href="https://github.com"><img class="github" src="assets/icons/social-gitt.svg" alt="github"></a>
+                <a href="https://www.pinterest.com"><img class="rss" src="assets/icons/social-rsss.svg" alt="rss"></a>
             </div>
         </div>
     </section>
@@ -84,12 +100,8 @@
             <div class="wrapper-tabs">
                 <div class="tabs-one">
                     <h2>Tabs with soft transitioning effect.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br>
-bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra<br>
-justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-penatibus et magnis dis parturient montes.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br>
-bibendum laoreet.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra<br> justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> bibendum laoreet.</p>
                     <div class="tabs-one-button">
                        <a href="#">Download</a>
                     </div>
@@ -109,11 +121,11 @@ bibendum laoreet.</p>
             <div class="section-about-elem">
                 <div class="section-about-elem-item">
                     <div class="section-about-elem-img">
-                        <img src="assets/icons/Vector-1.png" alt="Vector-1">
+                        <img class="one-img"  src="assets/icons/Vector-1.png" alt="Vector-1">
                     </div>
                     <div class="section-about-elem-text">
                         <h3>Thoughtful Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus<br> accumsan et viverra.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Aenean euismod bibendum laoreet Proin gravida  dolor sit amet lacus<br> accumsan et viverra.</p>
                     </div>
                 </div>
                 <div class="section-about-elem-item">
@@ -127,7 +139,7 @@ bibendum laoreet.</p>
                 </div>
                 <div class="section-about-elem-item">
                     <div class="section-about-elem-img">
-                        <img src="assets/icons/Vector-3.png" alt="Vector-3">
+                        <img class="three-img"  src="assets/icons/Vector-3.png" alt="Vector-3">
                     </div>
                     <div class="section-about-elem-text">
                         <h3>Thoughtful Design</h3>
@@ -192,8 +204,12 @@ bibendum laoreet.</p>
                 <h2 class="section-title">WHAT OUR CUSTOMERS ARE SAYING</h2>
             </div>
             <p class="section-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <div class="wrapper-review-content">
+            <input type="radio" name="info" id="slide-one" >
+	        <input type="radio" name="info" id="slide-two"checked>
+	        <input type="radio" name="info" id="slide-three">
         <div class="review-content">
-            <div class="review-col">
+            <div class="review-col one-column">
                 <div class="review-col-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
                 </div>
@@ -206,7 +222,7 @@ bibendum laoreet.</p>
                         </div>
                 </div>
             </div>
-            <div class="review-col">
+            <div class="review-col two-column">
                 <div class="review-col-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
                 </div>
@@ -218,7 +234,7 @@ bibendum laoreet.</p>
                     </div>
                 </div>
             </div>
-            <div class="review-col">
+            <div class="review-col three-column">
                 <div class="review-col-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
                 </div>
@@ -231,11 +247,17 @@ bibendum laoreet.</p>
                 </div>
             </div>
         </div>
+        <div class="slide-label">
+            <label for="slide-one"></label>
+            <label for="slide-two"></label>
+            <label for="slide-three"></label>
+        </div>
+        </div>
         </div>
     </section>
     <section class="section-design">
         <div class="wrapper-design">
-            <div class="banner-filter">
+            <div class="banner-filter-design">
                 <div>
                     <h2 class="design-title">STYLISH AXURE DESIGN</h2>
                 </div>
@@ -245,6 +267,35 @@ bibendum laoreet.</p>
         </div>
     </section>
     <section class="section-contact">
+        <div class="title">
+            <h2 class="section-title">CONTACT US</h2>
+        </div>
+        <p class="section-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <form class="section-contact-form" action="/" method="post" name="section-contact-form">
+                <div class="name-textarea">
+                <div class="name-password">
+                    <div class="contact-name">
+                        <input id="name" class="section-contact-name" type="text" name="name" title="Введите ваше имя">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="contact-email">
+                        <input id="email" class="section-contact-email" type="email" name="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="contact-password">
+                        <input id="password" class="section-contact-password" type="password" name="password">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="contact-textarea">
+                    <textarea name="textarea" id="textarea" rows="11"></textarea>
+                    <label for="textarea">Message</label>
+                </div>
+                </div>
+                  <div class="section-contact-submit">
+                     <input class="section-contact-submit" type="submit" name="submit" value="Send Message">
+                </div>
+        </form>
     </section>
     </main>
 <footer class="footer-container">

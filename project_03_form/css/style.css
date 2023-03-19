@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Open+Sans:wght@700&family=Poppins:wght@400;700&family=Raleway&family=Roboto&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.container-hobbyart {
+  margin-top: 100px;
+  padding-left: 50PX;
+  margin-bottom: 100px;
+}
+
+.container-hobbyart h2 {
+  margin-bottom: 32px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: left;
+}
+
+.form-city {
+  width: 520px;
+  height: 50px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #BDBDBD ;
+  border-radius: 83px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.form-city:focus,
+.form-address-street:focus,
+.form-address-house:focus,
+.form-address-apartment:focus,
+.form-address-index:focus,
+.hobbyart-select:focus,
+.form-recipient-surname:focus,
+.form-recipient-name:focus,
+.form-recipient-patronymic:focus,
+.phone:focus,
+.form-textarea:focus,
+.email:focus {
+  outline: 0;
+  border: 1px solid  #3f3e3e ;
+}
+
+.form-address-street,
+.form-address-house,
+.form-address-apartment,
+.form-address-index {
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #BDBDBD ;
+  border-radius: 83px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.form-address-street {
+  width: 254px;
+  height: 50px;
+  margin-right: 16px;
+}
+
+.form-address-house,
+.form-address-apartment,
+.form-address-index {
+  width: 130px;
+  height: 50px;
+}
+
+.form-address-house,
+.form-address-apartment {
+  margin-right: 16px;
+}
+
+.hobbyart-select {
+  width: 520px;
+  height: 50px;
+  padding-left: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #BDBDBD ;
+  border-radius: 83px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.form-textarea {
+  width: 692px;
+  height: 50px;
+  padding: 12px 0 12px 24px;
+  margin-bottom: 24px;
+  border: 1px solid #BDBDBD ;
+  border-radius: 83px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.form-recipient-surname,
+.form-recipient-name,
+.form-recipient-patronymic,
+.phone {
+  width: 220px;
+  height: 50px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #BDBDBD ;
+  border-radius: 83px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.form-recipient-surname,
+.form-recipient-name {
+  margin-right: 16px;
+}
+
+.phone,
+.email {
+  margin-bottom: 8px;
+}
+
+.form-phone p,
+.form-email p {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.form-phone,
+.form-email {
+  margin-bottom: 27px;
+}
+
+.email {
+  width: 456px;
+  height: 50px;
+  padding: 24px;
+  border: 1px solid #BDBDBD ;
+  border-radius: 83px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+#form-checkbox {
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+}
+
+.checkbox,
+.form-cash,
+.form-card {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-bottom: 69px;
+}
+
+#cash-pay,
+#cash-card {
+  width: 31px;
+  height: 31px;
+  margin-right: 16px;
+}
+
+.form-cash {
+  margin-bottom: 8px;
+}
+
+.review {
+  background-color: #FBF7F6;
+}
+
+.container-review {
+  padding: 95px 50px;
+}
+
+.container-review h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form-textarea-review {
+  width: 1234px;
+  height: 188px;
+  padding: 18px 0 0 25px;
+  margin: 25px 50px 30px 0px;
+  background-color: #F9F0EE;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  outline: none;
+}
+
+.form-textarea-review:focus {
+  outline: none;
+}
+
+.name-review,
+.email-review {
+  width: 387px;
+  height: 41px;
+  padding-left: 25px;
+  border: none;
+  outline: none;
+  background-color: #F9F0EE;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.name-review,
+.phone-review {
+  margin-right: 37px;
+}
+
+.phone-review {
+  width: 386px;
+  height: 41px;
+  padding-left: 25px;
+  border: none;
+  outline: none;
+  background-color: #F9F0EE;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.info-review {
+  margin-bottom: 30px;
+}
+
+.button-review {
+  width: 250px;
+  height: 63px;
+  color: #9A3C48;
+  background-color: #FFB0BA;
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  box-shadow: 3px 3px 0 3px #DE8E98;
+  margin-right: 37px;
+}
+
+#review-checkbox {
+  width: 12px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.checkbox-review {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-review label {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 30px;
+}

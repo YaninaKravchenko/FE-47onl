@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/iconsfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="assets/favicon/icon-favicon.ico" type="image/x-icon">
+    <title>form</title>
+</head>
+<body>
+    <section  class="hobbyart">
+        <div class="container-hobbyart">
+            <h2>Способ получения</h2>
+            <form class="form-hobbyart" action="/">
+                <div class="form-hobbyart-city">
+                    <input type="text" name="city" class="form-city" placeholder="Город" />
+                </div>
+                <select name="post" class="hobbyart-select">
+                    <option value="post-one">Почта Росии</option>
+                    <option value="post-two">Почта России отделение 1</option>
+                    <option value="post-three">Почта России отделение 2</option>
+                    <option value="post-four">Почта России отделение 3</option>
+                    <option value="post-five">Почта России отделение 4</option>
+                </select>
+                    <div class="address">
+                        <input type="text" name="street" class="form-address-street"  placeholder="Улица" />
+                        <input type="text" name="house" class="form-address-house"  placeholder="Дом" />
+                        <input type="text" name="apartment" class="form-address-apartment"  placeholder="Квартира" />
+                        <input type="text" name="index" class="form-address-index"  placeholder="Индекс" />
+                    </div>
+                        <textarea name="textarea" class="form-textarea">Добавить комментарий</textarea>
+               </form>
+               <h2>Данные получателя</h2>
+               <form class="form-recipient" action="/">
+                <div class="data-recipient">
+                    <input type="text" name="surname" class="form-recipient-surname" placeholder="Фамилия" />
+                    <input type="text" name="name" class="form-recipient-name" placeholder="Имя" />
+                    <input type="text" name="patronymic" class="form-recipient-patronymic" placeholder="Отчество" />
+                </div>
+                <div class="form-phone">
+                    <input class="phone" name="phone" type="tel" placeholder="Номер телефона">
+                    <p>По этому номеру телефона мы свяжемся с вами для подтверждения заказа</p>
+                </div>
+                <div class="form-email">
+                    <input type="email" name="email" class="email" placeholder="E-mail" />
+                    <p>На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания</p>
+                </div>
+                <div class="checkbox">
+                     <input type="checkbox" name="checkbox" id="form-checkbox" checked />
+                     <label for="form-chekbox">Подписаться на рассылку новинок и акций</label>
+                </div>
+                <h2>Способ оплаты</h2>
+                <div class="pay">
+                    <div class="form-cash">
+                        <input type="radio" name="pay" id="cash-pay" value="1"/>
+                        <label for="cash-pay">Оплата при получении наличными или картой</label>
+                    </div>
+                    <div class="form-card">
+                        <input type="radio" name="pay" id="cash-card" value="2"checked/>
+                        <label for="cash-card">Оплата банковской картой онлайн</label>
+                    </div>
+               </div>
+            </form>
+        </div>
+</section>
+<section class="review">
+    <div class="container-review">
+        <h2>Оставьте свой отзыв на “Ароматическое саше”</h2>
+        <form class="form-review" action="/">
+            <textarea name="textarea" class="form-textarea-review">Ваш отзыв*</textarea>
+            <div class="info-review">
+                <input class="name-review" type="text" name="name"  placeholder="Имя*" />
+                <input class="phone-review" type="tel" name="phone"  placeholder="Телефон*">
+                <input class="email-review" type="email" name="email"  placeholder="E-mail" />
+            </div>
+            <div class="checkbox-review">
+                <input type="button" name="button" class="button-review" value="Отправить" />
+                <input type="checkbox" name="checkbox" id="review-checkbox" checked />
+                <label for="review-chekbox">Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.</label>
+           </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>

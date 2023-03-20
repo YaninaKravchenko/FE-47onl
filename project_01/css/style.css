@@ -307,14 +307,25 @@
   text-decoration: none;
 }
 
-.section-social-icons a img {
+.section-social-icons a svg {
+  fill:#CCCCCC;
+  transition: .3s;
+  margin-right: 30px;
+}
+
+.section-social-icons a svg:hover {
+  fill: #EC7979;
+  cursor: pointer;
+}
+
+/*.section-social-icons a img {
   margin-right: 35px;
 }
 
 .section-social-icons a img:hover {
   filter: sepia(1) hue-rotate(280deg) saturate(3);
   transition: .3s;
-}
+}*/
 
 
 /*Секция tabs*/
@@ -1076,7 +1087,19 @@ transition: all 0.2s ease;
     margin-left: 42px;
   }
 
-  .section-social-icons .facebook {
+  .section-social-icons a svg {
+    transform: scale(0.8, 0.8);
+    fill:#CCCCCC;
+    transition: .3s;
+    margin-right: 18px;
+  }
+
+  .section-social-icons a svg:hover {
+    fill: #EC7979;
+    cursor: pointer;
+  }
+
+  /*.section-social-icons .facebook {
     width: 27.72px;
     height: 50.67px;
     margin-right: 38px;
@@ -1116,7 +1139,7 @@ transition: all 0.2s ease;
     width: 64px;
     height: 50px;
     margin-right: 0;
-  }
+  }*/
 
   .section-social-media p:first-child {
     margin-bottom: 18px;
@@ -1586,10 +1609,23 @@ transition: all 0.2s ease;
     text-align: center;
   }
 
+  .section-social-icons a svg {
+    transform: scale(0.6, 0.6);
+    fill:#CCCCCC;
+    transition: .3s;
+    margin-right: 7px;
+  }
+
+  .section-social-icons a svg:hover {
+    fill: #EC7979;
+    cursor: pointer;
+  }
+
   .section-social-icons {
     margin: auto auto;
   }
 
+  /*
   .section-social-icons .facebook {
     width: 12px;
     height: 20px;
@@ -1630,7 +1666,7 @@ transition: all 0.2s ease;
     width: 26px;
     height: 26px;
     margin-right: 0;
-  }
+  }*/
 
   /*Секция tabs*/
 
@@ -2111,7 +2147,22 @@ transition: all 0.2s ease;
     margin: 35px auto;
   }
 
-  .section-social-icons .facebook {
+  .section-social-icons a svg {
+    transform: scale(0.5, 0.5);
+    fill:#CCCCCC;
+    transition: .3s;
+    margin-right: -14px;
+  }
+
+  .section-social-icons a svg:hover {
+    fill: #EC7979;
+    cursor: pointer;
+  }
+
+  .section-social-icons {
+    margin: auto auto;
+  }
+  /*.section-social-icons .facebook {
     width: 12px;
     height: 20px;
     margin-right: 20px;
@@ -2151,7 +2202,7 @@ transition: all 0.2s ease;
     width: 26px;
     height: 26px;
     margin-right: 0;
-  }
+  }*/
 
   /*Секция tabs*/
 

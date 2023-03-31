@@ -29,9 +29,13 @@
 
     &-nav-list {
         display: flex;
+        height: 100%;
         gap: 55px;
 
         a {
+            display: inline-block;
+            position: relative;
+            padding: 20px 0;
             text-decoration: none;
             text-transform: uppercase;
             font-family: 'Raleway', sans-serif;
@@ -42,16 +46,36 @@
             transition: .3s;
             cursor: pointer;
 
-            &:hover {
-                padding-bottom: 54px;
+            &::after {
+                /*padding-bottom: 54px;
                 color: $textHover;
-                border-bottom: 3px solid $lineHover;
+                border-bottom: 3px solid $lineHover;*/
+                display: block;
+                position: absolute;
+                content: "";
+                height: 3px;
+                width: 0%;
+                background-color: $lineHover;
+                transition: 0.3s ease-in-out;
+            }
+
+            &:hover::after {
+                /*padding-bottom: 54px;
+                color: $textActive;
+                border-bottom: 3px solid $lineActive;*/
+                width: 100%;
+                margin-top: 44px;
             }
 
             &:active {
-                padding-bottom: 54px;
                 color: $textActive;
-                border-bottom: 3px solid $lineActive;
+            }
+
+
+            &:active::after {
+                margin-top: 44px;
+                width: 100%;
+                background-color: $textActive;
             }
         }
     }

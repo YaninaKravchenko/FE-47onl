@@ -5,3 +5,41 @@
         max-width: 100%;
     }
 }*/
+.section-testimonials {
+    margin: 0 auto;
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: row;
+
+        .swiper-slide-text {
+        background-color: #5C3249;
+        color: #FFFFFF;
+        font-family: 'Cardo', serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+ 
+            .testimonials {
+                margin: 0 auto;
+                text-transform: capitalize;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 49px;
+                margin-bottom: 20px;
+                padding: 0 15%;
+            }
+
+            .author {
+                font-family: 'Raleway', sans-serif;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 15px;
+                padding: 0 15%;
+            }
+        }
+    }
+}

@@ -212,6 +212,44 @@
   }
 }
 
+.section-testimonials {
+  margin: 0 auto;
+}
+
+.section-testimonials .swiper-slide {
+  flex-direction: row;
+  display: flex;
+}
+
+.section-testimonials .swiper-slide .swiper-slide-text {
+  color: #fff;
+  background-color: #5c3249;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Cardo, serif;
+  display: flex;
+}
+
+.section-testimonials .swiper-slide .swiper-slide-text .testimonials {
+  text-transform: capitalize;
+  margin: 0 auto 20px;
+  padding: 0 15%;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 49px;
+}
+
+.section-testimonials .swiper-slide .swiper-slide-text .author {
+  text-transform: uppercase;
+  padding: 0 15%;
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;

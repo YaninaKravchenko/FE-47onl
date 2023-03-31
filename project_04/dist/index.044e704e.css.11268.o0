@@ -212,44 +212,6 @@
   }
 }
 
-.section-testimonials {
-  margin: 0 auto;
-}
-
-.section-testimonials .swiper-slide {
-  flex-direction: row;
-  display: flex;
-}
-
-.section-testimonials .swiper-slide .swiper-slide-text {
-  color: #fff;
-  background-color: #5c3249;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  font-family: Cardo, serif;
-  display: flex;
-}
-
-.section-testimonials .swiper-slide .swiper-slide-text .testimonials {
-  text-transform: capitalize;
-  margin: 0 auto 20px;
-  padding: 0 15%;
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 49px;
-}
-
-.section-testimonials .swiper-slide .swiper-slide-text .author {
-  text-transform: uppercase;
-  padding: 0 15%;
-  font-family: Raleway, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 15px;
-}
-
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -6292,7 +6254,7 @@
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("fa-solid-900.5a3c5564.9b50bf17.woff2") format("woff2"), url("fa-solid-900.9d722a3a.c22de952.ttf") format("truetype");
+  src: url("fa-solid-900.5a3c5564.woff2") format("woff2"), url("fa-solid-900.9d722a3a.ttf") format("truetype");
 }
 
 .fas, .fa-solid {
@@ -6309,7 +6271,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("fa-brands-400.54de2a85.df973aaa.woff2") format("woff2"), url("fa-brands-400.76bbd5b9.84585de0.ttf") format("truetype");
+  src: url("fa-brands-400.54de2a85.woff2") format("woff2"), url("fa-brands-400.76bbd5b9.ttf") format("truetype");
 }
 
 .fab, .fa-brands {
@@ -13810,7 +13772,7 @@
 .main-container .section-banner {
   height: 747px;
   z-index: 1;
-  background-image: url("img.cf7f3f10.83a653d4.jpg");
+  background-image: url("img.cf7f3f10.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14159,4 +14121,4 @@
   display: flex;
 }
 
-/*# sourceMappingURL=index.1ba5be7d.css.map */
+/*# sourceMappingURL=index.044e704e.css.map */

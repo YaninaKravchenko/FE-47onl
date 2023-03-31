@@ -1,0 +1,72 @@
+.main-container {
+  margin: 0 auto;
+
+  .section-banner {
+   display: flex;
+   height: 747px;
+   margin-top: -105px;
+   position: relative;
+   z-index: 1;
+   background-image: url(../assets/logo/img.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      background-color: #252B49;
+      opacity: 80%;
+    }
+  }
+
+  .banner-filter {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+  }
+
+  .banner-text  {
+    max-width: 1200px;
+    padding: 0 15px;
+    position: relative;
+    z-index: 5;
+    font-family: 'Raleway', sans-serif;
+    color: $white;
+    text-align: center;
+
+    h1 {
+      @extend %titleH1;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      margin: 30px 0 80px 0;
+    }
+
+    .banner-btn {
+      @extend %btn;
+
+      .button {
+       @extend %button;
+
+          &:hover {
+            @extend %buttonHover;
+          }
+
+          &:active {
+            @extend %buttonActive;
+          }
+      }
+    }
+  }
+}

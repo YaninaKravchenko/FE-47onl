@@ -1,0 +1,43 @@
+.section-download {
+    @extend %wrapper;
+    margin: 116px auto;
+
+    .download {
+        color: $black;
+        text-align: center;
+        font-family: Raleway, sans-serif;
+
+        &-one {
+            margin-bottom: 20px;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 35px;
+        }
+
+        &-two {
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+        }
+
+        .banner-btn {
+            @extend %btn;
+
+            .button {
+                @extend %button;
+
+                &:hover {
+                    @extend %buttonHover;
+                }
+
+                &:active {
+                    @extend %buttonActive;
+                }
+            }
+
+        }
+    }
+
+}

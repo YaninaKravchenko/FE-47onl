@@ -70,3 +70,61 @@
     }
   }
 }
+
+@media /*(min-width: 860px) and*/ (max-width: 1024px) {
+  .main-container .section-banner {
+    height: 768px;
+    margin-top: -94px;
+
+    .banner-filter .banner-text {
+         h1 {
+        text-transform: uppercase;
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 900;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+    .banner-btn {
+      width: 313px;
+      height: 77px;
+      margin: 0 auto;
+      text-align: center;
+      cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .main-container .section-banner {
+    height: 574px;
+    margin-top: -94px;
+
+    .banner-filter .banner-text {
+         h1 {
+        text-transform: uppercase;
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 900;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+    .banner-btn {
+      width: 279px;
+      height: 58px;
+      margin: 0 auto;
+      text-align: center;
+      cursor: pointer;
+      }
+    }
+  }
+}

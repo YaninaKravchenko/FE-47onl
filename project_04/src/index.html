@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-vars.scss" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="scss/styles.scss">
     <link rel="stylesheet" href="../dist/index.044e704e.css">
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
@@ -44,7 +44,7 @@
         <div class="wrapper section-banner">
             <div class="banner-filter">
                 <div class="banner-text">
-                    <h1>Your Favorite One Page</h1>
+                    <h1>Your Favorite One PageMulti Purpose Templatei</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
                         vel scelerisque nisl consectetur et.</p>
                     <div class="banner-btn">
@@ -63,6 +63,15 @@
                 </div>
                 <div class="section-features-elem-text">
                     <h3>easily customised</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+            </div>
+            <div class="section-features-elem-item">
+                <div class="section-features-elem-img">
+                    <img class="icon"  src="assets/icons/icon_2.svg" alt="icon">
+                </div>
+                <div class="section-features-elem-text">
+                    <h3>responsive ready</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
                 </div>
             </div>
@@ -99,15 +108,6 @@
                 </div>
                 <div class="section-features-elem-text">
                     <h3>download for free</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                </div>
-            </div>
-            <div class="section-features-elem-item">
-                <div class="section-features-elem-img">
-                    <img class="icon"  src="assets/icons/icon_2.svg" alt="icon">
-                </div>
-                <div class="section-features-elem-text">
-                    <h3>responsive ready</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
                 </div>
             </div>
@@ -192,7 +192,7 @@
                     <img src="assets/images/photo_1.png" alt="photo">
                 </div>
                 <div class="team-info">
-                    <h4>Ruth Woods</h4>
+                    <h4 class="name">Ruth Woods</h4>
                     <p class="job-title">founder, ceo</p>
                     <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                     <div class="social-icon">
@@ -216,7 +216,7 @@
                     <img src="assets/images/photo_2.png" alt="photo">
                 </div>
                 <div class="team-info">
-                    <h4>Timothy Reed</h4>
+                    <h4 class="name">Timothy Reed</h4>
                     <p class="job-title">co-founder, developer</p>
                     <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                     <div class="social-icon">
@@ -240,7 +240,7 @@
                     <img src="assets/images/photo_3.png" alt="photo">
                 </div>
                 <div class="team-info">
-                    <h4>Victoria Vladez</h4>
+                    <h4 class="name">Victoria Vladez</h4>
                     <p class="job-title">ui designer</p>
                     <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                     <div class="social-icon">
@@ -264,7 +264,7 @@
                     <img src="assets/images/photo_4.png" alt="photo">
                 </div>
                 <div class="team-info">
-                    <h4>Beverly Little</h4>
+                    <h4 class="name">Beverly Little</h4>
                     <p class="job-title">data scientist</p>
                     <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                     <div class="social-icon">
@@ -287,41 +287,9 @@
     </section>
     <section class="section-testimonials">
         <a id="testimonials"></a>
-
-       <!--<div class="image-slider swiper-container">
-            <div class="image-slider__wrapper swiper-wrapper">
-                <div class="image-slider__slide swiper-slide">
-                    <div class="image-slider__image">
-                        <img src="assets/images/img_slider_1.png" alt="slider">
-                    </div>
-                    <div class="slider-testimonials">
-                        <p class="testimonials-text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-                        <p class="testimonials-author">Susan Sims, Interaction Designer at XYZ</p>
-                    </div>
-                    <div class="image-slider__slide swiper-slide">
-                        <div class="image-slider__image">
-                            <img src="assets/images/img_slider_1.png" alt="slider">
-                        </div>
-                    <div class="slider-testimonials">
-                        <p class="testimonials-text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-                        <p class="testimonials-author">Susan Sims, Interaction Designer at XYZ</p>
-                    </div>
-                    </div>
-                    <div class="image-slider__slide swiper-slide">
-                        <div class="image-slider__image">
-                            <img src="assets/images/img_slider_1.png" alt="slider">
-                        </div>
-                    <div class="slider-testimonials">
-                        <p class="testimonials-text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-                        <p class="testimonials-author">Susan Sims, Interaction Designer at XYZ</p>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!-- Slider main container -->
 <div class="swiper">
     <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-adaptive">
             <img src="assets/images/img_slider_1.png" alt="slider">
             <div class="swiper-slide-text">
                 <p class="testimonials">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
@@ -358,12 +326,10 @@
         </div>
     </div>
     <div class="swiper-pagination"></div>
+      <!--<div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar 
+ If we need scrollbar 
   <div class="swiper-scrollbar"></div>-->
 </div>
     </section>

@@ -12,7 +12,7 @@
   var swiper = new Swiper('.swiper', {
     slidesPerView: 1,
    /* slidesPerColumn: 2,*/
-    spaceBetween: 30,
+    spaceBetween: 5,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,

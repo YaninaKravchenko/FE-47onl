@@ -69,3 +69,155 @@
         }
     }
 }
+
+@media /*(min-width: 860px) and*/ (max-width: 1024px) {
+    .section-team {
+        margin: 80px auto;
+
+        .team-wrapper {
+
+            .team-content {
+
+                .team-info {
+                    padding-top: 20px;
+
+                    .name {
+                        font-size: 18px;
+                        line-height: 21px;
+                        padding-bottom: 6px;
+                    }
+
+                    .job-title {
+                        font-size: 14px;
+                        line-height: 16px;
+                        padding-bottom: 21px;
+                    }
+
+                    .description {
+                        font-size: 14px;
+                        line-height: 16px;
+                        padding-bottom: 38px;
+                    }
+                }
+
+                .social-icon {
+
+                    .social-icon-item {
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 5px;
+
+                        .fa-brands {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+@media (min-width: 560px) and (max-width: 799px) {
+    .section-team {
+        margin: 80px auto;
+
+        .team-wrapper {
+
+            .team-content {
+
+                .team-info {
+                    padding-top: 20px;
+
+                    .name {
+                        font-size: 18px;
+                        line-height: 21px;
+                        padding-bottom: 6px;
+                    }
+
+                    .job-title {
+                        font-size: 14px;
+                        line-height: 16px;
+                        padding-bottom: 21px;
+                    }
+
+                    .description {
+                        font-size: 14px;
+                        line-height: 16px;
+                        padding-bottom: 38px;
+                    }
+                }
+
+                .social-icon {
+
+                    .social-icon-item {
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 5px;
+
+                        .fa-brands {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
+
+
+@media (min-width: 320px) and (max-width: 550px) {
+    .section-team {
+        margin: 35px auto;
+
+        .team-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .team-content {
+                width: 100%;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                .team-photo img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+
+                .team-info {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 30px;
+                    flex-grow: 1;
+
+
+                    .team-info h4 {
+                        font-size: 18px;
+                        line-height: 21px;
+                        padding-bottom: 5px;
+                    }
+
+                    .job-title {
+                        font-size: 14px;
+                        line-height: 16px;
+                        padding-bottom: 35px;
+                        flex-grow: 1;
+                    }
+                    .description {
+                        font-size: 14px;
+                        line-height: 16px;
+                        padding-bottom: 55px;
+                    }
+                }
+
+                .social-icon {
+                   padding-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+}

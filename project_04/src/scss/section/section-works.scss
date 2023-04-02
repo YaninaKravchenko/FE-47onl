@@ -65,10 +65,64 @@
   }
     .works-photo li:hover  .works-text {
       transform: scale(1);
+      transition: .5s ease-in-out;
     }
 
     .works-photo li:active  .works-text {
       transform: scale(1);
       background-color: rgba(185, 12, 12, 0.8);
     }
+}
+
+@media /*(min-width: 860px) and*/ (max-width: 1024px) {
+  .section-works {
+
+    .works-photo {
+
+      & li {
+        flex-basis: 250px;
+      }
+
+        & .text-title {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+
+        & .text {
+          font-size: 14px;
+        }
+      }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .section-works {
+    .works-photo {
+
+      & li {
+        flex-basis: 154px;
+      }
+
+      & .photo {
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+      }
+
+      .works-text {
+        & .text-title {
+          font-size: 18px;
+          line-height: 21px;
+          margin-bottom: 7px;
+        }
+
+        & .text {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+
+  }
 }
